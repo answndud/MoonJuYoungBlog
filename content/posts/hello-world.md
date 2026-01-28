@@ -2,8 +2,8 @@
 title: "첫 번째 포스트: Hello World!"
 date: 2026-01-28
 draft: false
-tags: ["블로그", "시작"]
-categories: ["일반"]
+tags: ["blog"]
+categories: ["general"]
 description: "Hugo와 GitHub Pages로 만든 첫 번째 블로그 포스트입니다."
 ---
 
