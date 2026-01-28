@@ -76,27 +76,52 @@ keys = ["title", "permalink", "summary", "content"]
 # 메뉴
 [[menu.main]]
 identifier = "posts"
-name = "포스트"
+name = "전체 글"
 url = "/posts/"
 weight = 10
+
+[[menu.main]]
+identifier = "categories"
+name = "카테고리"
+url = "/categories/"
+weight = 15
+
+[[menu.main]]
+identifier = "finance"
+name = "Finance"
+url = "/categories/finance/"
+weight = 20
+
+[[menu.main]]
+identifier = "cs"
+name = "CS"
+url = "/categories/cs/"
+weight = 21
+
+[[menu.main]]
+identifier = "security"
+name = "Security"
+url = "/categories/security/"
+weight = 22
+
 
 [[menu.main]]
 identifier = "archives"
 name = "아카이브"
 url = "/archives/"
-weight = 20
+weight = 30
 
 [[menu.main]]
 identifier = "tags"
 name = "태그"
 url = "/tags/"
-weight = 30
+weight = 40
 
 [[menu.main]]
 identifier = "search"
 name = "검색"
 url = "/search/"
-weight = 40
+weight = 50
 
 # 검색 페이지 출력 형식
 [outputs]
