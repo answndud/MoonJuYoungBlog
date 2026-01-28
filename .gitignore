@@ -3,6 +3,9 @@
 /resources/_gen/
 /.hugo_build.lock
 
+# 개인 가이드 (로컬 전용)
+content/guide.md
+
 # 에디터
 .idea/
 *.swp

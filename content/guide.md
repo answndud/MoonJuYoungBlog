@@ -501,19 +501,84 @@ YouTube 영상 삽입:
 {{</* twitter TWEET_ID */>}}
 ```
 
-### 5. 댓글 시스템
+### 5. 댓글 시스템 (Giscus)
 
-Giscus, Utterances, Disqus 등을 사용할 수 있습니다.
+이 블로그는 **Giscus**를 사용해 GitHub Discussions 기반 댓글 기능을 제공합니다.
 
-Giscus 예시 (`hugo.toml`):
+#### 설정 방법
+
+**1단계: GitHub 저장소 설정**
+
+1. [저장소 설정](https://github.com/answndud/MoonJuYoungBlog/settings)에서 **Discussions** 활성화
+2. [Giscus 앱](https://github.com/apps/giscus) 설치 및 저장소 권한 부여
+
+**2단계: 설정값 확인**
+
+[Giscus 설정 페이지](https://giscus.app/ko)에서:
+- 저장소: `answndud/MoonJuYoungBlog` 입력
+- 페이지 ↔️ Discussion 연결: `pathname` 선택
+- Discussion 카테고리 선택
+- 생성된 설정값을 `hugo.toml`에 적용
+
+**3단계: 현재 설정 (hugo.toml)**
 
 ```toml
+[params]
+comments = true  # 전역 댓글 활성화
+
 [params.giscus]
-repo = "username/repo"
-repoID = "R_xxx"
-category = "Comments"
-categoryID = "DIC_xxx"
+repo = "answndud/MoonJuYoungBlog"
+repoId = "R_kgDORC6yYQ"
+category = "General"
+categoryId = "DIC_kwDORC6yYc4Cmq_5"
+mapping = "pathname"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "top"
+theme = "preferred_color_scheme"
+lang = "ko"
+loading = "lazy"
 ```
+
+#### 댓글 비활성화
+
+**전체 비활성화**: `hugo.toml`에서 `comments = false`로 설정
+
+**특정 글만 비활성화**: Front Matter에 추가
+
+```yaml
+---
+title: "댓글 없는 글"
+disableComments: true
+---
+```
+
+#### 댓글 테마 변경
+
+다크모드/라이트모드 자동 전환:
+```toml
+theme = "preferred_color_scheme"  # 현재 설정 (권장)
+```
+
+고정 테마:
+```toml
+theme = "light"        # 라이트 모드 고정
+theme = "dark"         # 다크 모드 고정
+theme = "dark_dimmed"  # 어두운 회색
+```
+
+#### 댓글 위치 변경
+
+```toml
+inputPosition = "top"     # 입력창 상단 (현재 설정)
+inputPosition = "bottom"  # 입력창 하단
+```
+
+#### 댓글 관리
+
+- 댓글은 GitHub Discussions에 저장됩니다
+- [Discussions 탭](https://github.com/answndud/MoonJuYoungBlog/discussions)에서 관리 가능
+- 스팸 댓글 삭제, 수정 등 GitHub에서 직접 관리
 
 ---
 

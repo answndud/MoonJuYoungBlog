@@ -35,7 +35,7 @@ ShowRssButtonInSectionTermList = true
 UseHugoToc = true
 disableSpecial1stPost = false
 disableScrollToTop = false
-comments = false
+comments = true
 hidemeta = false
 hideSummary = false
 showtoc = true
@@ -44,6 +44,20 @@ tocopen = false
 [params.homeInfoParams]
 Title = "안녕하세요 👋"
 Content = "개인 블로그에 오신 것을 환영합니다."
+
+# Giscus 댓글 설정
+[params.giscus]
+repo = "answndud/MoonJuYoungBlog"
+repoId = "R_kgDORC6yYQ"
+category = "General"
+categoryId = "DIC_kwDORC6yYc4Cmq_5"
+mapping = "pathname"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "top"
+theme = "preferred_color_scheme"
+lang = "ko"
+loading = "lazy"
 
 [[params.socialIcons]]
 name = "github"
