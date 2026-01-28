@@ -9,20 +9,9 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
-# 정렬 설정 (최신 글부터)
-[params.mainSections]
-  section = ["posts"]
-
+# 검색 페이지 출력 형식
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
-
-[[cascade]]
-  [cascade._target]
-    kind = "section"
-    path = "/posts/**"
-  [cascade.params]
-    sortBy = "date"
-    sortOrder = "desc"
+home = ["HTML", "RSS", "JSON"]
 
 # 페이지네이션
 [pagination]
@@ -55,6 +44,9 @@ hidemeta = false
 hideSummary = false
 showtoc = true
 tocopen = false
+
+# 홈 페이지 설정
+mainSections = ["posts"]
 
 [params.homeInfoParams]
 Title = "안녕하세요"
