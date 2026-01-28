@@ -87,19 +87,19 @@ url = "/categories/"
 weight = 15
 
 [[menu.main]]
-identifier = "finance"
+identifier = "cat-finance"
 name = "Finance"
 url = "/categories/finance/"
 weight = 20
 
 [[menu.main]]
-identifier = "cs"
+identifier = "cat-cs"
 name = "CS"
 url = "/categories/cs/"
 weight = 21
 
 [[menu.main]]
-identifier = "security"
+identifier = "cat-security"
 name = "Security"
 url = "/categories/security/"
 weight = 22
