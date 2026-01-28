@@ -1,6 +1,6 @@
 baseURL = 'https://answndud.github.io/MoonJuYoungBlog/'
 languageCode = 'ko-kr'
-title = 'My Blog'
+title = '문주영 블로그'
 theme = 'PaperMod'
 
 # 빌드 옵션
@@ -42,8 +42,8 @@ showtoc = true
 tocopen = false
 
 [params.homeInfoParams]
-Title = "안녕하세요 👋"
-Content = "개인 블로그에 오신 것을 환영합니다."
+Title = "안녕하세요"
+Content = "블로그에 오신 것을 환영합니다."
 
 # Giscus 댓글 설정
 [params.giscus]
