@@ -7,20 +7,8 @@ categories: ["일반"]
 description: "Hugo와 GitHub Pages로 만든 첫 번째 블로그 포스트입니다."
 ---
 
-## 안녕하세요!
+## Demo Post
+Demo Post Content
 
-Hugo와 GitHub Pages를 사용해서 개인 블로그를 시작했습니다.
-
-### Hugo란?
-
-Hugo는 Go 언어로 작성된 정적 사이트 생성기입니다. 빠른 빌드 속도와 유연한 템플릿 시스템으로 많은 개발자들에게 사랑받고 있습니다.
-
-### 앞으로의 계획
-
-이 블로그에서는 다양한 주제로 글을 작성할 예정입니다:
-
-- 개발 관련 팁과 튜토리얼
-- 프로젝트 경험 공유
-- 일상적인 생각들
-
-감사합니다! 🎉
+### What is Hugo
+Hugo is a static site generator written in Go. Its fast build speed and flexible templating system have made it popular among many developers.
