@@ -6,6 +6,8 @@ tags: ["tech", "english”]
 categories: ["tech"]
 ---
 
+[blog link](https://benevolent-pixie-3155d0.netlify.app/)
+
 # English for IT
 
 ## 00. 개요
