@@ -2,7 +2,7 @@
 title: “English for IT 총정리”
 date: 2026-02-01
 draft: false
-tags: ["tech", "english”]
+tags: ["tech", “english”]
 categories: ["tech"]
 ---
 
